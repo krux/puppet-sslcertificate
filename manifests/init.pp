@@ -69,7 +69,7 @@
 #
 define sslcertificate (
   String[1] $location,
-  String[1] $thumbprint,
+  Variant[Deferred, String[1]] $thumbprint,
   Optional[String[1]] $password    = undef,
   String[1] $root_store            = 'LocalMachine',
   String[1] $store_dir             = 'My',
